@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
 .left-side {
   height: 98vh;
   border-radius: 10px;
@@ -7,10 +9,6 @@
 
 .avatar:hover {
   transform: rotate(-8deg);
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  -ms-transform: rotate(-8deg);
-  -o-transform: rotate(-8deg);
 }
 
 .brand-title {
@@ -21,64 +19,248 @@
   font-size: 12px;
 }
 
-/* .left-side-link-group {
-
-  border: 1px solid red;
-} */
-
 .left-side-link {
   list-style: none;
   font-size: 16px;
   margin: 8px 0 8px 0;
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
 .content {
-  border: 1px solid red;
+  background-color: #1b2430;
   height: 98vh;
   border-radius: 10px;
 }
 
-/* .  promo-option {
-  width: 100px;
-} */
-
-/* .title {
-} */
-
-/* .left-side-link {
-  padding-right: ; */
-/* } */
-
-.btn-search {
+/* button styling */
+.btn-search,
+.btn-wallet {
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 13px;
   background-color: #2c3333;
   cursor: pointer;
   border-radius: 7px;
-  transition: all ease .3s;
+  transition: all ease 0.3s;
 }
 
-.btn-promo {
-  background-color: #2c3333;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  border-radius: 7px;
-  transition: all ease .3s;
-  cursor: pointer;
-}
-
-.btn-promo:hover,
 .left-side-link:hover,
 .btn-search:hover {
-  /* color: #fff; */
   background-color: crimson;
 }
 
+/* for active link */
 .active {
   background-color: crimson;
+}
+
+/*scroll-wrapper styling*/
+.suggest-card {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.suggest-card:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+.card_red,
+.card_red .title .fa {
+  background: linear-gradient(-45deg, #28313b, #485461);
+}
+.card_violet,
+.card_violet .title .fa {
+  background: linear-gradient(-45deg, #7f838d, rgb(10, 10, 10));
+}
+.card_own,
+.card_own .title .fa {
+  background: linear-gradient(-45deg, #576574, #c2b6b6);
+}
+.card_three,
+.card_three .title .fa {
+  background: linear-gradient(-45deg, rgb(22, 18, 18), #7ed6df);
+}
+
+.suggest-card:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title h2 {
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+  color: #000;
+  font-size: 20px;
+}
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 10px 0 0;
+  color: #000;
+  font-size: 40px;
+}
+.option {
+  position: relative;
+  z-index: 2;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #000;
+  font-size: 16px;
+  display: none;
+}
+.suggest-card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #2c3333;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  margin: 10px auto 0;
+  line-height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.3s;
+}
+.suggest-card a:hover {
+  text-decoration: none;
+  background-color: crimson;
+  color: #fff;
+}
+
+/* horizontal-scrolling */
+.scrolling-wrapper {
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.scrolling-wrapper:hover {
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eaeaea;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7f8487;
+}
+
+/*display */
+.display {
+  border-radius: 10px;
+  height: 98vh;
+}
+
+.navbar {
+  color: #fff;
+}
+
+/* .main-profile {
+} */
+
+.main-profile,
+.card-profile {
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card-profile {
+  border: none;
+}
+
+.img-profile {
+  outline: 3px solid #787a91;
+  background-color: #5c527f;
+  border-radius: 50px;
+}
+
+.name-address {
+  color: #787a91 !important;
+  text-decoration: none;
+}
+
+.name-address:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.name-desc {
+  margin-top: 14px;
+}
+
+.purchases {
+  background-color: #2c3333;
+  border-radius: 24px;
+  padding: 12px 7px;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
+}
+
+.purchases-flow {
+  cursor: pointer;
+  color: #787a91;
+  transition: all ease .5s;
+}
+
+.purchases h5 {
+  font-size: 14px;
+}
+
+.profile-option h5 {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.purchases-flow:hover {
+  color: #fff;
 }
