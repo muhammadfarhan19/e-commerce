@@ -197,10 +197,19 @@
 .display {
   border-radius: 10px;
   height: 98vh;
+  position: relative;
 }
 
 .navbar {
   color: #fff;
+}
+
+.fa-close {
+  transition: 0.5s;
+}
+
+.fa-close:hover {
+  transform: rotate(180deg);
 }
 
 /* .main-profile {
@@ -208,9 +217,7 @@
 
 .main-profile,
 .card-profile {
-  margin: 0 auto;
   background-color: #fff;
-  text-align: center;
 }
 
 .card-profile {
@@ -246,14 +253,19 @@
   -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
 }
 
-.purchases-flow {
+.purchases-flow,
+.setting-option h5 {
   cursor: pointer;
   color: #787a91;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
 }
 
 .purchases h5 {
   font-size: 14px;
+}
+
+.purchases-flow:hover {
+  color: #fff;
 }
 
 .profile-option h5 {
@@ -261,6 +273,87 @@
   cursor: pointer;
 }
 
-.purchases-flow:hover {
+/* setting */
+.setting-option {
+  position: relative;
+  border-radius: 10px;
+  background-color: #2C394B;
+  height: 40px;
+  cursor: pointer;
+  transition: all ease .3s;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.61);
+}
+
+.setting-option:hover {
+  transform: translateY(-3px);
+}
+
+.setting-option:nth-child(1) {
+  margin-top: 30px;
+}
+
+.setting-option input {
+  margin-top: 10px;
+}
+
+.setting-option h5 {
+  margin: 6px 0 0 10px;
+  font-size: 16px;
+  display: inline;
+  transition: all ease .5s;
+  position: absolute;
+}
+
+.setting-option h5::before {
+  content: "";
+}
+
+.setting-option:hover > h5 {
   color: #fff;
+  transform: translateX(14px);
+}
+
+.setting-option i,
+.setting-option input {
+  font-size: 20px;
+  position: absolute;
+}
+
+.setting-option-icon {
+  margin-top: 3px;
+  font-size: 16px;
+  left: 1;
+  opacity: 0;
+  transition: all ease 1s;
+}
+
+.setting-nav {
+  margin-right: 4px;
+  margin-top: 3px;
+  right: 0;
+  opacity: 0;
+  transition: all ease 1s;
+}
+
+.setting-option:hover > .setting-option-icon,
+.setting-option:hover > .setting-nav {
+  opacity: 1;
+}
+
+
+.small-profile {
+  box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+}
+
+.small-profile h5 {
+  color: #fff;
+  cursor: pointer;
+}
+
+.small-profile img {
+  cursor: pointer;
 }
