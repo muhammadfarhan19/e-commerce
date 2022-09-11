@@ -21,16 +21,24 @@ sideBar.addEventListener('click', (e) => {
 navLink.forEach((el) => {
   el.addEventListener('click', (e) => {
 
+    function fadeIn() {
+      display.classList.add('fade');
+      setTimeout(() => {
+        display.classList.remove('fade');
+      }, 500);
+    }
 
     if (e.target.textContent == 'Setting') {
       navBarTitle.innerHTML = 'Setting';
       profile.classList.add('d-none');
       setting.classList.remove('d-none');
+      fadeIn()
     }
     if (e.target.textContent == 'Profile') {
       navBarTitle.innerHTML = 'Profile';
       profile.classList.remove('d-none');
       setting.classList.add('d-none');
+      fadeIn()
     }
   })
 });

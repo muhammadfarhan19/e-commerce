@@ -1,0 +1,17 @@
+@media (max-width: 767.98px) {
+  .master-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .left-side {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .display {
+    display: none;
+  } */
+}

@@ -56,25 +56,43 @@
   background-color: crimson;
 }
 
-/*scroll-wrapper styling*/
 .suggest-card {
   position: relative;
-  height: auto;
-  overflow: hidden;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 15px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
   cursor: pointer;
+  height: 140px;
 }
+
 .suggest-card:hover {
-  transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
+  box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
 }
+
+.see-more {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: #2c3333;
+  color: #fff !important;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  top: 10;
+  border-radius: 10px;
+  line-height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.3s;
+}
+
+
+
+
+/*scroll-wrapper styling*/
+/*
 .card_red,
 .card_red .title .fa {
   background: linear-gradient(-45deg, #28313b, #485461);
@@ -137,29 +155,13 @@
   font-size: 16px;
   display: none;
 }
-.suggest-card a {
-  display: block;
-  position: relative;
-  z-index: 2;
-  background-color: #2c3333;
-  color: #fff;
-  width: 120px;
-  height: 40px;
-  text-align: center;
-  margin: 10px auto 0;
-  line-height: 40px;
-  border-radius: 40px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: all ease 0.3s;
-}
+
 .suggest-card a:hover {
   text-decoration: none;
   background-color: crimson;
   color: #fff;
 }
+*/
 
 /* horizontal-scrolling */
 .scrolling-wrapper {
@@ -345,8 +347,8 @@
 
 .small-profile {
   box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
 }
 
 .small-profile h5 {
@@ -356,4 +358,61 @@
 
 .small-profile img {
   cursor: pointer;
+}
+
+/* fade for changing a display */
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+/* cart-display */
+.cart-scoller {
+  overflow: hidden;
+}
+
+.cart-scoller:hover {
+  overflow: scroll;
+}
+
+.cart-card {
+  background-color: #423F3E;
+  cursor: pointer;
+  width: 270px;
+  padding: 15px 10px;
+  border-radius: 14px;
+  transition: all ease .3s;
+  height: fit-content;
+}
+
+.cart-card:hover {
+  box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.75);
+}
+
+.cart-card img {
+  border-radius: 10px;
+}
+
+.cart-desc {
+  transition: all ease .3s;
+}
+
+.cart-card a {
+  color: #fff !important;
+  transition: all ease .3s;
+  padding: 0;
+  margin-bottom: 30px;
+  /* opacity: 0; */
+}
+
+.cart-card:hover > .cart-card a {
+  opacity: 1;
 }

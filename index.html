@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Farhan Store</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-styling.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body style="background-color: #000">
-    <div class="row m-2 gap-1">
+    <div class="row m-2 gap-1 master-container">
       <!-- side-bar-start -->
-      <div class="col-2 left-side">
+      <div class= "col-2 left-side">
         <div class="container-fluid">
-            <div class="row g-0 mt-2">
-              <div class="col-4">
-                <img src="/assets/avatar.png" class="img-fluid rounded-start avatar" alt="avatar" />
-              </div>
-              <div class="col-8 mt-3">
-                <div class="card-body brand">
-                  <h5 class="card-title brand-title"><span style="color: crimson">Farhan </span>Store</h5>
-                  <p class="card-text brand-desc">Buy Everything</p>
-                </div>
+          <div class="row g-0 mt-2" style="cursor: pointer;">
+            <div class="col-4">
+              <img src="/assets/avatar.png" class="img-fluid rounded-start avatar" alt="avatar" />
+            </div>
+            <div class="col-8 mt-3">
+              <div class="card-body brand">
+                <h5 class="card-title brand-title"><span style="color: crimson">Farhan </span>Store</h5>
+                <p class="card-text brand-desc">Buy Everything</p>
               </div>
             </div>
+          </div>
           <div class="row mt-4">
             <ul class="row mt-3 d-flex ms-0">
               <li class="left-side-link"><i class="fa fa-home me-2"></i>Dashboard</li>
@@ -46,13 +46,53 @@
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <div class="btn-search"><i class="fa fa-search"></i></div>
             </form>
-            <!-- start-test -->
+            <!-- start-suggest -->
             <div class="container horizontal-scrollable">
-              <div class="row d-flex justify-content-center row flex-row flex-nowrap scrolling-wrapper">
+              <!-- <div class="row d-flex justify-content-center flex-row flex-nowrap scrolling-wrapper">
+                
+                <div class="col-sm-3 mt-4 mb-3">
+                  <div class="card suggest-card card_own text-center">
+                    <div class="title">
+                      <h2>tot</h2>
+                    </div>
+                    <div class="price">
+                      <h4><sup>$</sup>25</h4>
+                    </div>
+                    <div class="option">
+                      <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>10 GB Space</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>3 Domain Names</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>20 Emails Addresse</li>
+                        <li><i class="fa fa-times" aria-hidden="true"></i>Live Support</li>
+                      </ul>
+                    </div>
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
+                <div class="col-sm-3 mt-4 mb-3">
+                  <div class="card suggest-card card_three text-center">
+                    <div class="title">
+                      
+                      <h2>Standart</h2>
+                    </div>
+                    <div class="price">
+                      <h4><sup>$</sup>50</h4>
+                    </div>
+                    <div class="option">
+                      <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>50 GB Space</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>5 Domain Names</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>20 Emails Addresse</li>
+                        <li><i class="fa fa-times" aria-hidden="true"></i>Live Support</li>
+                      </ul>
+                    </div>
+                    <a href="#">Order Now</a>
+                  </div>
+                </div>
                 <div class="col-sm-3 mt-4 mb-3">
                   <div class="card suggest-card card_red text-center">
                     <div class="title">
-                      <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
+                      
                       <h2>Basic</h2>
                     </div>
                     <div class="price">
@@ -110,7 +150,7 @@
                 <div class="col-sm-3 mt-4 mb-3">
                   <div class="card suggest-card card_three text-center">
                     <div class="title">
-                      <!-- <i class="fa fa-rocket" aria-hidden="true"></i> -->
+                      
                       <h2>Standart</h2>
                     </div>
                     <div class="price">
@@ -127,94 +167,18 @@
                     <a href="#">Order Now</a>
                   </div>
                 </div>
-                <div class="col-sm-3 mt-4 mb-3">
-                  <div class="card suggest-card card_red text-center">
-                    <div class="title">
-                      <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
-                      <h2>Basic</h2>
-                    </div>
-                    <div class="price">
-                      <h4><sup>$</sup>25</h4>
-                    </div>
-                    <div class="option">
-                      <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>10 GB Space</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>3 Domain Names</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>20 Emails Addresse</li>
-                        <li><i class="fa fa-times" aria-hidden="true"></i>Live Support</li>
-                      </ul>
-                    </div>
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-                <div class="col-sm-3 mt-4 mb-3">
-                  <div class="card suggest-card card_violet text-center">
-                    <div class="title">
-                      <h2>Premium</h2>
-                    </div>
-                    <div class="price">
-                      <h4><sup>$</sup>25</h4>
-                    </div>
-                    <div class="option">
-                      <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>10 GB Space</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>3 Domain Names</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>20 Emails Addresse</li>
-                        <li><i class="fa fa-times" aria-hidden="true"></i>Live Support</li>
-                      </ul>
-                    </div>
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-                <div class="col-sm-3 mt-4 mb-3">
-                  <div class="card suggest-card card_own text-center">
-                    <div class="title">
-                      <h2>Premium</h2>
-                    </div>
-                    <div class="price">
-                      <h4><sup>$</sup>25</h4>
-                    </div>
-                    <div class="option">
-                      <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>10 GB Space</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>3 Domain Names</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>20 Emails Addresse</li>
-                        <li><i class="fa fa-times" aria-hidden="true"></i>Live Support</li>
-                      </ul>
-                    </div>
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-                <div class="col-sm-3 mt-4 mb-3">
-                  <div class="card suggest-card card_three text-center">
-                    <div class="title">
-                      <!-- <i class="fa fa-rocket" aria-hidden="true"></i> -->
-                      <h2>Standart</h2>
-                    </div>
-                    <div class="price">
-                      <h4><sup>$</sup>50</h4>
-                    </div>
-                    <div class="option">
-                      <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>50 GB Space</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>5 Domain Names</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>20 Emails Addresse</li>
-                        <li><i class="fa fa-times" aria-hidden="true"></i>Live Support</li>
-                      </ul>
-                    </div>
-                    <a href="#">Order Now</a>
-                  </div>
-                </div>
-              </div>
+              </div> -->
+              
             </div>
-            <!-- end-test -->
+            <!-- end-suggest -->
+            
           </div>
         </div>
       </div>
       <!-- content-end -->
 
       <!-- display-bar-start -->
-      <div class="col bg-dark display">
+      <div class="col  bg-dark display">
         <div class="row justify-content-center">
           <div class="container-fluid">
             <nav class="navbar">
@@ -223,7 +187,7 @@
             </nav>
             
             <!-- profile-start -->
-            <div class="display-profile">
+            <div class="d-none display-profile">
               <div class="row bg-dark main-profile">
                 <div class="card border-0 bg-dark text-center text-light d-flex align-items-center p-3 card-profil">
                   <img src="/assets/avatar.png" class="card-img-rounded mt-4 border border-5 border-dark img-profile" alt="you profile picture" style="width: 100px" />
@@ -319,8 +283,97 @@
               </div>
             </div>
             </div>
-            
             <!-- setting-end -->
+
+            <!-- cart-start -->
+            <div class="display-cart">
+              <div class="row mt-4 pt-3 text-light justify-content-start cart-scoller" style="height: 320px;">
+                <div class="col-10">
+                  <div class="ps-3 mb-3 justify-content-between cart-card">
+                    <div class="row align-items-center">
+                      <div class="col-4">
+                        <img
+                          src="/assets/belanjaan/sepatu/sepatu-satu.jpeg"
+                          alt="nike kayanya"
+                          width="80px"
+                          class="border"
+                        />
+                      </div>
+                      <div class="col-7 cart-desc">
+                        <h5 class="fs-6 mt-2">Lorem, ipsum.</h5>
+                        <p>$250</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps-3 mb-3 justify-content-between cart-card">
+                    <div class="row align-items-center">
+                      <div class="col-4">
+                        <img
+                          src="/assets/belanjaan/sepatu/sepatu-satu.jpeg"
+                          alt="nike kayanya"
+                          width="80px"
+                          class="border"
+                        />
+                      </div>
+                      <div class="col-7 cart-desc">
+                        <h5 class="fs-6 mt-2">Lorem, ipsum.</h5>
+                        <p>$250</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps-3 mb-3 justify-content-between cart-card">
+                    <div class="row align-items-center">
+                      <div class="col-4">
+                        <img
+                          src="/assets/belanjaan/sepatu/sepatu-satu.jpeg"
+                          alt="nike kayanya"
+                          width="80px"
+                          class="border"
+                        />
+                      </div>
+                      <div class="col-7 cart-desc">
+                        <h5 class="fs-6 mt-2">Lorem, ipsum.</h5>
+                        <p>$250</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps-3 mb-3 justify-content-between cart-card">
+                    <div class="row align-items-center">
+                      <div class="col-4">
+                        <img
+                          src="/assets/belanjaan/sepatu/sepatu-satu.jpeg"
+                          alt="nike kayanya"
+                          width="80px"
+                          class="border"
+                        />
+                      </div>
+                      <div class="col-7 cart-desc">
+                        <h5 class="fs-6 mt-2">Lorem, ipsum.</h5>
+                        <p>$250</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps-3 mb-3 justify-content-between cart-card">
+                    <div class="row align-items-center">
+                      <div class="col-4">
+                        <img
+                          src="/assets/belanjaan/sepatu/sepatu-satu.jpeg"
+                          alt="nike kayanya"
+                          width="80px"
+                          class="border"
+                        />
+                      </div>
+                      <div class="col-7 cart-desc">
+                        <h5 class="fs-6 mt-2">Lorem, ipsum.</h5>
+                        <p>$250</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- cart-end -->
           </div>
         </div>
       </div>
